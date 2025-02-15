@@ -1,0 +1,5 @@
+# Ignore Hugo generated files
+/public/
+# Ignore system junk (optional)
+.DS_Store
+Thumbs.db
