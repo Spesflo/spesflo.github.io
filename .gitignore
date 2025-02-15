@@ -3,3 +3,5 @@
 # Ignore system junk (optional)
 .DS_Store
 Thumbs.db
+# Ignore personal files
+.env
