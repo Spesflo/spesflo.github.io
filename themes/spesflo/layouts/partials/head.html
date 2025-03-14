@@ -1,5 +1,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self';">
+<meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="X-Frame-Options" content="DENY">
+<meta http-equiv="X-XSS-Protection" content="1; mode=block">
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
 {{ partialCached "head/css.html" . }}
 {{ partialCached "head/js.html" . }}
