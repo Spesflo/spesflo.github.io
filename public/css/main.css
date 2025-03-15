@@ -4,8 +4,9 @@ body {
   color: #222;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   line-height: 1.5;
-  margin: 1rem;
-  max-width: 768px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
 }
 
 /*header {
@@ -29,40 +30,31 @@ p {
 
 .siteTitle {
   text-align: center;
+  color: #fff;
 }
 
 .button2 {
-  padding: 0.75em 2em;
   text-align: center;
-  color: #333c5f;
-  border: 2px solid #333c5f;
-  font-size: 24px;
-  border-radius: 0.3em;
-  transition: all 0.2s ease-in-out;
-  position: relative;
-  overflow: hidden;
-  margin: 65px auto;
-  width: 150px;
-  padding: 1rem 0;
-  text-decoration: none;
-  &::before {
-    content: "";
-    background-color: rgba(255, 255, 255, 0.5);
-    height: 100%;
-    width: 3em;
-    position: absolute;
-    top: 0;
-    left: -4.5em;
-    transform: skewX(-45deg) translateX(0);
-    transition: none;
-  }
-  &:hover {
-    background-color: #333c5f;
-    color: #fff;
-    border-bottom: 4px solid darken(#333c5f, 10%);
-    &::before {
-      transform: skewX(-45deg) translateX(13.5em);
-      transition: all 0.5s ease-in-out;
-    }
-  }
+  position: fixed;
+  top: 152px;
+}
+
+div.topSiteDiv {
+  background-color: #333c5f;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+div.footerDiv {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #333c5f;
+}
+
+p.copyright {
+  color: #fff;
 }
