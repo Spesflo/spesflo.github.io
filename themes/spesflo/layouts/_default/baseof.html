@@ -7,7 +7,11 @@
   <header>
     {{ partial "header.html" . }}
   </header>
-
+  <nav>
+    <ul>
+        <li><a href="{{ .Site.BaseURL }}mission/">Mission</a></li>
+    </ul>
+  </nav>
   <main>
     {{ block "main" . }}{{ end }}
   </main>
